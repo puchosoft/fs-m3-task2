@@ -1,0 +1,310 @@
+* {
+margin:0;
+padding:0;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  height:inherit;
+	font-family: "Comic Sans MS";
+  background-color:green;
+  .background-image:url("../img/design2_image1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+
+/*  Se define un contenedor "header" que contiene 3 secciones: encabezado, titulo1 y logo */
+.header {
+  width:100%;
+  height:30%;
+  position:fixed;
+  z-index:5;
+}
+
+section#encabezado {
+  width:100%;
+  height:75%;
+  color:black;
+  position:absolute;
+  float:left;
+  left:0%;
+  z-index:10;
+  display:flex;
+  line-height: 3;
+  font-size:2em;
+  font-style:italic;
+  text-shadow: 3px 3px 5px white;
+}
+
+section#encabezado h1{
+  padding-left:2em;
+}
+
+section#titulo1 {
+  position:absolute;
+  float:left;
+  bottom:0%;
+  width:100%;
+  height:25%;
+  display: flex;
+  justify-content: center;
+  line-height: 1.8;
+  color:white;
+  background-color:black;
+  z-index:10;
+}
+
+div#logo {
+  position:absolute;
+  float:right;
+  top:62.5%;
+  right:10%;
+  width:11%;
+  height:50%;
+  z-index:20;
+  background-image:url("../img/nysl_logo.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/*  Se define un contenedor "main" que contiene un nav y un article */
+main {
+  position:fixed;
+  top:30%;
+  width:100%;
+  height:70%;
+  background-color:rgba(0,0,0,.6);
+}
+
+/*  El contenedor nav contiene los links dispuestos en horizontal, con color de fondo y borde */
+nav {
+  width:20%;
+  height:100%;
+  float:left;
+  top:0%;
+  display: flex;
+  flex-direction:column;
+  justify-content:  space-around;
+  align-items: center;
+}
+
+/*  Se definen las caracteristicas de los links normales y visitados */
+nav a:link , nav a:visited{
+  display:block;
+  width:40%;
+  height:11%;
+  line-height:3;
+  text-align: center;
+  color:white;
+  border: 0px solid green;
+  border-radius: 20px;
+  background-color:darkblue;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px white;
+}
+
+/*  Se definen las caracteristicas del link actual */
+#actual {
+  background-color:green;
+}
+
+article {
+  float:left;
+  width:74%;
+  padding-left:2%;
+  padding-right:4%;
+  padding-top:2%;
+  padding-bottom:4%;
+  height:100%;
+  color:white;
+  overflow:auto;
+}
+
+article#rules {
+  font-family: sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+article#info, article#registration {
+  font-family: sans-serif;
+}
+
+article#info a:link, article#contact a:link{
+  color:yellow;
+}
+
+article#about p{
+  margin-left:2%;
+  margin-top:0;
+}
+
+/***************************/
+/* Estilos para rules.html */
+/***************************/
+
+article li {
+  text-align:justify;
+}
+
+main h2 {
+  text-align:center;
+  margin-bottom:1em;
+}
+
+main ol.listanum1{
+  padding-left:2em;
+}
+
+main ol.listanum1 li{
+  padding-bottom:1em;
+}
+
+main ol.listanum2{
+  list-style-type: lower-alpha;
+  padding-left:2em;
+}
+
+main ol.listanum2 li{
+  padding-bottom:0em;
+}
+
+main ol.listanum3{
+  padding-left:2em;
+}
+
+main ol.listanum3 li{
+  padding-bottom:0em;
+}
+
+main ul {
+  list-style:square;
+  padding-left: 2em;
+}
+
+main ul li:last-child {
+  margin-bottom:1em;
+}
+
+main ul#item-redondo {
+  list-style:circle;
+  padding-left: 2em;
+}
+
+/*******************************/
+/* Estilos para game_info.html */
+/*******************************/
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse:collapse;
+  padding:1em;
+}
+
+tr {
+  height:2em;
+}
+
+table.tabla1, .tabla2 {
+  width:100%;
+  margin-bottom:2em;
+}
+
+.tabla1 th {
+  font-size:1.2em;
+  text-align:left;
+  text-decoration:none;
+}
+.tabla2 th {
+  text-align:left;
+}
+
+.col30{
+  width:30%;
+}
+.col50{
+  width:50%;
+}
+
+.tabla1 tr:nth-child(odd) td:first-child{
+  padding-left:3em;
+}
+
+.tabla2 td:nth-child(3){
+  display:flex;
+  justify-content:space-around;
+}
+
+.italica{
+  font-style:italic;
+}
+.negrita{
+  font-weight:bold;
+}
+.derecha{
+  float:right;
+}
+.ident_1em{
+  padding-left:1em;
+}
+
+/**********************************/
+/* Estilos para registration.html */
+/**********************************/
+
+fieldset {
+  border:2px solid lightgreen;
+  border-radius:20px;
+  padding:1em 2em;
+  margin-bottom:1.5em;
+}
+
+legend {
+  margin-left:2em;
+  padding:0 1em;
+  color:black;
+  background-color:lightgreen;
+  font-weight:bold;
+  line-height:1.5em;
+  border-radius:10px;
+}
+
+label , fieldset div{
+  line-height:2em;
+  display:inline;
+  float:left;
+  width:50%;
+  margin-bottom:0.5em;
+}
+
+input {
+  margin-left:1em;
+  margin-right:0.5em;
+}
+
+fieldset p{
+  text-align:justify;
+}
+
+#submit{
+  width:10%;
+  margin:0 45%;
+  height:2em;
+  color:black;
+  background-color:lightgreen;
+  border:0px solid black;
+  border-radius:10px;
+  font-size:1.2em;
+}
+
+label.columna_full, div.columna_full{
+  width:100%;
+}
+
+label input{
+  right:0px;
+}
