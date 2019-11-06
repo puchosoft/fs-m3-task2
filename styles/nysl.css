@@ -1,0 +1,24 @@
+html {
+height:-webkit-fill-available;  
+}
+
+body {
+  height:inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:green;
+}
+
+
+header {
+  height:35%;
+}
+
+div#cabecera{
+  height:2ex;
+  background-color:yellow;
+}
+
+div#logo{
+    height:inherit;
+}
+
